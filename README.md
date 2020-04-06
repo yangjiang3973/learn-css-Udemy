@@ -253,6 +253,4 @@ extends are usually used for related selectors, not very common. mixin is prefer
 An introduction to the command line
 
 ## video No.3
-
-
-
+install node and sass    

@@ -1,0 +1,22 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "learn to create a landing page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yangjiang3973/learn-css-Udemy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yangjiang3973/learn-css-Udemy/issues"
+  },
+  "homepage": "https://github.com/yangjiang3973/learn-css-Udemy#readme",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}

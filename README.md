@@ -254,3 +254,16 @@ An introduction to the command line
 
 ## video No.3
 install node and sass    
+
+# 2020-04-07
+## video No.1
+init sass and install live-server
+
+## video No.2
+convert current css to sass
+
+## video No.3
+implement 7-1 pattern
+
+base
+    _base.scss

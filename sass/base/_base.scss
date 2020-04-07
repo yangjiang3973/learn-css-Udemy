@@ -1,0 +1,18 @@
+// Basic settings for the entire project 
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    // this defines what 1 rem is (10px)
+    font-size: 62.5%; /* 10 / 16 = 0.625*/
+}
+
+body {
+    box-sizing: border-box;
+}

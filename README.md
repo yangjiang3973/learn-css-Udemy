@@ -265,5 +265,52 @@ convert current css to sass
 ## video No.3
 implement 7-1 pattern
 
-base
-    _base.scss
+theme and vendors are missing in this project
+
+## video No.4
+review 3 rules for responsive design
+
+1. Fluid grids and layouts:
+
+Use % rather than px for all layout-related length
+
+2. Flexible/responsive img
+Need to make sure images can adapt nicely to the current viewport
+
+3. Media query
+set break points for different width of viewport
+
+Layout types:
+
+1. Float layouts
+
+2. Flexbox
+
+3. CSS grid
+
+## video No.5
+Build a custom grid with floats
+
+## video No.6
+## video No.7
+## video No.8
+all about building the About section
+
+PS: need to learn details of each params of `box-shadow`
+
+## video No.9
+build the feature section
+
+1. how to use font icons
+
+## video No.10
+build the Tour section:
+
+1. rotate card
+
+2. perspective?
+
+3. how to make a card have front and back 2 sides
+
+
+

@@ -312,5 +312,12 @@ build the Tour section:
 
 3. how to make a card have front and back 2 sides
 
+## video No.11
+continue to building the card:
+
+background-blend-mode
+
+## video No.12
+finished building other 2 cards
 
 

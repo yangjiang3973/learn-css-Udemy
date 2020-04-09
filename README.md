@@ -320,4 +320,20 @@ background-blend-mode
 ## video No.12
 finished building other 2 cards
 
+## video No.13
+build the story section
+
+1. make text around shapes: `shape-outside` and `float`
+
+2. apply filter to img
+
+3. use <video> and make background video cover an entire section
+
+4. `object-fit`
+
+## video No.14
+continue the above
+
+## video No.15
+continue the above: background video
 

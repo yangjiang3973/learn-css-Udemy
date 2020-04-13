@@ -337,3 +337,45 @@ continue the above
 ## video No.15
 continue the above: background video
 
+## video No.16
+build the booking section:
+
+1. `solid-color gradients`
+
+2. how the general and adjacent sibling selectors work and why we need them
+
+3. how to use the `::input-placeholder` pseudo-element
+
+4. how and when to use `:focus :invalid placeholder-shown and :check` pseudo-classes
+
+5. techniques to build custom radio buttons
+
+```css
+/* solid-color gradient is a special way to make a polygon*/
+background-image: linear-gradient(
+                                    105deg, 
+                                    rgba($color-white, .9) 0%,
+                                    rgba($color-white, .9) 50%,
+                                    transparent 50%
+                                    ), 
+                      url(../img/nat-10.jpg);
+```
+
+# 2020-04-11
+## video No.1
+continue with the booking section:
+
+```css
+/* use pseudo element to change placeholder text style */
+::placeholder {
+    color: blue;
+}
+```
+
+# 2020-04-12
+## video No.1
+continue with the booking section:
+
+# 2020-13
+## video No.1
+build the footer section

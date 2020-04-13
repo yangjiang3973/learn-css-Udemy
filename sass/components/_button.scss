@@ -1,4 +1,5 @@
 .btn {
+    &,  // this is for button element that does not have pseudo-class
     &:link,
     &:visited {
         text-transform: uppercase;
@@ -9,6 +10,10 @@
         transition: all .2s; /*transition is at initial state*/
         position: relative;
         font-size: $default-font-size;
+
+        // Change for the <button> element
+        border: none;
+        cursor: pointer;
     }
 
     &:hover {
@@ -20,7 +25,9 @@
         }
     }
 
+    &:focus, // for <button> element
     &:active {
+        outline: none; // for <button> element
         transform: translateY(-0.1rem);
         box-shadow: 0 0.5rem 1rem rgba($color-black, .2);
     }

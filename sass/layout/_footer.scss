@@ -2,6 +2,7 @@
     background-color: $color-grey-dark-3;
     padding: 10rem 0;
     font-size: 1.4rem;
+    color: $color-grey-light-1;
 
     &__logo-box {
         text-align: center;
@@ -14,7 +15,9 @@
     }
 
     &__navigation {
-
+        border-top: 1px solid $color-grey-dark;
+        padding-top: 2rem;
+        display: inline-block;
     }
 
     &__list {
@@ -32,14 +35,26 @@
         &:link,
         &:visited {
             color: $color-grey-light-1;
+            background-color: $color-grey-dark-3;
             text-decoration: none;
             text-transform: uppercase;
             display: inline-block;
+            transition: all .2s;
         }
 
         &:hover,
         &:active {
-
+            color: $color-primary;
+            box-shadow: 0 1rem 2rem rgba($color: $color-black, $alpha: .4);
+            transform: rotate(5deg) scale(1.3);
         }
+    }
+
+    &__copyright {
+        // color: $color-grey-light-1; will inherit from footer
+        border-top: 1px solid $color-grey-dark;
+        padding-top: 2rem;
+        width: 80%;
+        float: right;
     }
 }

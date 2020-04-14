@@ -376,6 +376,29 @@ continue with the booking section:
 ## video No.1
 continue with the booking section:
 
-# 2020-13
+# 2020-04-13
 ## video No.1
 build the footer section
+
+# 2020-04-14
+## video No.1
+build the navigation
+
+1. what is the `checkbox hack`
+
+2. custom animation timing function using cubic bezier curvers
+
+3. how to animate `solid-color` gradients
+
+4. how to use `transform-origin`
+
+## video No.2
+continue to building the navigation
+
+Q: background-size and background-position
+
+## video No.3
+
+
+
+

@@ -398,7 +398,29 @@ continue to building the navigation
 Q: background-size and background-position
 
 ## video No.3
+finished buding the navigation.
 
+how to use css only to make a nav button and change to close button
+
+## video No.4
+build popup
+
+1. how to use popup section
+
+2. how to use `:target` pseudo class
+
+3. how to create boxes with equal height using `display: table-cell`
+
+4. how to create text column
+
+5. how to hyphen words
+
+## video No.5
+continue to building popup(to make it showup and disappear)
+
+Q: difference between `display: none` and `opacity: 0; visibility: hidden`
+
+ 
 
 
 

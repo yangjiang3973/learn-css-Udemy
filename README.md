@@ -420,6 +420,60 @@ continue to building popup(to make it showup and disappear)
 
 Q: difference between `display: none` and `opacity: 0; visibility: hidden`
 
+## video No.6
+### responsive design
+desktop first or mobile first
+
+breakpoints:
+
+good way to choose breakpoints is to check popular devices and group the size.
+
+**StatCounter** has the data.
+
+1. phone  600
+
+2. portrait tablet  600 - 900
+
+3. landscape tablet  900 - 1200
+
+4. desktop  1200+
+
+# 2020-04-15
+## video No.1
+1. use media query in sass mixin
+
+2. @content and @if sass directives
+
+3. Chrome DevTools
+
+```css
+@mixin respond-phone {
+    @media (max-width: 600px) {
+        @content 
+    }
+}
+
+@include respond-phone {
+    font-size: 50%;
+}
+```
+
+`@content` is similar to passing arguments to a mixin, but it can allow you to pass a block of code 
+
+This is a simple way to use media query, it is better to make a media query manager(like a function)
+
+## video No.2
+polish order: Base + typography > general layout + grid > page layout > components
+
+## video No.3
+continue to fix
+
+## video No.4
+continue to fix component
+
+homework: make popup box responsive
+
+`www.sizzy.co` is to test webpage on different devices
  
 
 

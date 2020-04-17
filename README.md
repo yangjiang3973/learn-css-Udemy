@@ -471,10 +471,176 @@ continue to fix
 ## video No.4
 continue to fix component
 
-homework: make popup box responsive
-
 `www.sizzy.co` is to test webpage on different devices
  
+**TODO** homework: make popup box responsive
 
+also most done, but the two img do not have the same height...
+
+**Done** use flex
+
+# 2020-04-16
+## video No.1
+responsive image
+
+It is not only for responsive web design, but also for web performance.
+
+The goal is to server the right image to the right screen size and device,
+in order to avoid downloading unnecessary large images on smaller screens.
+
+## video No.2
+art direction and density switching
+
+1. `srcset` attribute on `img`, <source> element and density descriptor
+
+2. `<picture>` element
+
+3. media query in HTML
+
+For `srcset`, you can pass more than one src and let browser to choose the best one.
+```html
+<div class="footer__logo-box">
+    <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full logo" class="footer__logo">
+</div>
+```
+
+In art direction, we choose different img on different width:
+```html
+<div class="footer__logo-box">
+    <picture class="footer__logo">
+        <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x"
+                media="(max-width: 37.5rem)">
+        <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full logo">                 
+    </picture>
+</div>
+```
+in `<source>`, use media to write media query for small screen, and the <img> below has srcset for other screen.
+
+## video No.3
+resolution switching
+
+allow the browser to decide the best img to download, using the `srcset` attribute, width descriptor, and the `size` attribute of `<img>` element.
+
+```html
+<img 
+srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
+sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+class="composition__photo composition__photo--p1"
+src="img/nat-1-large.jpg" 
+alt="Photo 1">
+```
+
+# 2020-04-17
+## video No.1
+Responsive img in CSS, mainly for background img
+
+write different media queries for different situation.
+
+```css
+@media (min-resolution: 192dpi) and (min-width:37.5em), // comma means OR
+       (min-width: 125em)
+    {
+        background-image: linear-gradient(to right bottom, rgba($color-primary-light,0.8), rgba($color-primary-dark,0.8)) ,url(../img/hero.jpg);
+    }
+
+```
+
+## video No.2
+Browser support! 
+
+1. @supports
+
+```css
+@supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {  /* if either property is supported*/
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        background-color: rgba($color-black, .3);   /* set opecity to .3 under this condition to cooperate backdrop-filter*/
+    }
+```
+
+2. graceful degradation
+
+3. backdrop-filter
+
+## video No.3
+Build process
+
+use npm to build final css file
+
+## video No.4
+finalize
+
+```css
+::selection {
+    color: $color-white;
+    background-color: $color-primary;
+}
+```
+
+improve media query:
+```css
+@media only screen and (max-width: 37.5em) { @content }; /*  if print, this media query will not apply*/
+```
+
+
+in order to make webpage responsive, keep this line in html:
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
+
+for larger screen but cannot hover(big touch device):
+```css
+@media only screen and (hover: none) {
+
+}
+```
+
+## video No.5
+Section: introduction to flexbox plus other things like svg
+
+## video No.6
+philosophy behind flexbox
+
+
+flexbox is a new module in CSS3 that makes it easy to align elements to on another, in different directions and order.
+
+the main idea behind flexbox is to give the container the ability to expand and to shrink elements to best use all the available space.
+
+flexbox replaces float layouts, using less, and more readable and logical code.
+
+flexbox completely change the way that we build one-dimensional layouts
+
+```css
+/* flex container*/
+display: flex;
+/* display: flex-inline (not often used)*/
+```
+
+main axis 
+
+cross axis
+
+container:  
+1. flex-direction: row | row-reverse | column | column-reverse
+
+2. flex-wrap: nowrap | wrap | wrap-reverse
+
+3. justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly  (main axis)
+
+4. align-items: stretch | flex-start | flex-end | center | baseline  (cross axis)
+
+5. align-content: stretch | flex-start | flex-end | center | space-between | space-around
+
+item:  
+1. align-self: auto | stretch | flex-start | flex-end | center | baseline
+
+2. order: 0 | <integer>
+
+`/* shorthand for these 3 properties: flex: 0 1 auto */`
+3. flex-grow: 0 | <integer>
+
+4. flex-grow: 1 | <integer>
+
+5. flex-basis: auto | <length>
 
 

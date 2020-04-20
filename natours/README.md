@@ -629,7 +629,7 @@ container:
 
 4. align-items: stretch | flex-start | flex-end | center | baseline  (cross axis)
 
-5. align-content: stretch | flex-start | flex-end | center | space-between | space-around (for rows)
+5. align-content: stretch | flex-start | flex-end | center | space-between | space-around
 
 item:  
 1. align-self: auto | stretch | flex-start | flex-end | center | baseline
@@ -642,34 +642,5 @@ item:
 4. flex-shrink: 1 | <integer>
 
 5. flex-basis: auto | <length>
-
-# 2020-04-19
-## video No.1
-practice flexbox container
-
-```css
-flex-direction: row;
-justify-content: center;
-align-items: baseline;
-```
-
-## video No.2
-practice flexbox item
-
-flex-grow: 0 | <integer>
-
-flex-shrink: 1 | <integer>
-
-flex-basis: auto | <length>
-
-# 2020-04-20
-## video No.1
-more properties about flexbox item
-
-`align-content` is for rows.
-
-## video No.2
-
-
 
 

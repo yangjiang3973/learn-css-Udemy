@@ -768,7 +768,23 @@ continue the navigation
 ## video No.4
 build the hotel-view
 
+1. how to create an infinite animation
 
+2. `margin: auto` with flexbox
+
+for example, use `margin-right:auto` to give space to the item and avoid stretch it to the right.
+
+3. continue with flexbox
+
+## video No.5
+continue the hotel-view
+
+## video No.6
+build the description section
+
+1. more flexbox: `flex-wrap` to build a multi-column list
+
+2. how and why to use `mask-image` and `mask-size`
 
 
 

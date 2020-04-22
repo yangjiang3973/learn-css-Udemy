@@ -671,6 +671,105 @@ more properties about flexbox item
 ## video No.2
 init trillo project
 
+## video No.3
+start working on trillo, like file structure and so on.
+
+how and why to use css custom properties
+
+css variables can replace sass variables if you want
+
+```css
+/* make css variables global */
+:root {
+    --color-primary: #eb2f64;
+    --color-primary-light: #FF3366;
+    --color-primary-dark: #BA265D;
+}
+/* use var() to call css variables*/
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
+}
+```
+
+## video No.4
+build the overall layout
+
+1. how to think about the overall layout of an project
+
+2. use flexbox in a real-world project for the first time
+
+## video No.5
+build the header
+
+1. why svg VS font icons:
+
+font icons are actually a hack way to make an icon. Not as stable as svg. And screen readers cannot recognize it.
+
+and easy to change color in css
+
+2. how to find, generate and use svg sprites in HTML
+
+sprite file contains all svg icons you need, so only one http request is needed
+
+```html
+<button class="search__button">
+    <svg class="search__icon">
+        <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+    </svg>
+</button>
+```
+
+3. how to change the color of an svg icons in css
+
+4. how to use other flexbox techniques
+
+## video No.6
+continue to building the header
+
+# 2020-04-22
+## video No.1
+finish the header
+
+```scss
+/* <span class="user-nav__notification">13</span> */
+
+&__notification {
+    font-size: .8rem;
+    height: 1.75rem;
+    width: 1.75rem;
+    border-radius: 50%;  // text will not be at the circle's center
+    background-color: var(--color-primary);
+    color: #fff;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.1rem;
+
+    display: flex;  // so use css trick to center text
+    justify-content: center;
+    align-items: center;
+}
+```
+
+## video No.2
+build the navigation
+
+1. how to use scaleY and other transition properties to create hover effect
+
+2. how and why to use `currentColor` css variable
+
+3. more flexbox techniques
+
+## video No.3
+continue the navigation
+
+## video No.4
+build the hotel-view
+
+
+
 
 
 

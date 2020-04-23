@@ -841,5 +841,34 @@ build the user review section by flexbox
 
 z-index has no effect for position:static (the default).
 
+## video No.2
+build the CTA section
+
+some creative and modern hover effect
+
+## video No.3
+media queries
+
+flexbox is powerful for making webpages reponsive
+
+## video No.4
+media queries
+
+**change flex direction from row to column to fix on small screen**
+
+## video No.5
+wrap up
+
+1. this page can be also built by Grid
+
+2. challenge:
+
+display a user menu when hovering over the username in .user-nav
+
+display a message menu when hovering over the chat icon in .user-nav(maybe like facebook)
+
+display a box with search suggestions as soon as the user starts typing in the search field
+
+create a caption for the .gallery__item with a nice hover effect
 
 

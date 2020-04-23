@@ -784,8 +784,62 @@ build the description section
 
 1. more flexbox: `flex-wrap` to build a multi-column list
 
+```css
+.col-1 {
+    background-color: turquoise;
+    flex: 0 0 60%;
+}
+
+.col-2 {
+    background-color: violet;
+    flex: 1;
+}
+```
+if you want `col-1` to occupy 60%, then set `flex: 0 0 60%` and set `flex: 1` to `col-2` to let it occupy the left space.
+
 2. how and why to use `mask-image` and `mask-size`
 
+## video No.7
+continue the above
+
+make a 2-column list:
+
+```html
+<ul class="list">
+    <li class="list__item">Close to the beach</li>
+    <li class="list__item">Breakfast included</li>
+    <li class="list__item">Free airport shuttle</li>
+    <li class="list__item">Free wifi in all rooms</li>
+    <li class="list__item">Air conditioning and heating</li>
+    <li class="list__item">Pets allowed</li>
+    <li class="list__item">We speak all languages</li>
+    <li class="list__item">Perfect for families</li>
+</ul>
+```
+
+```scss
+.list {
+    list-style: none;
+    margin: 3rem 0;
+    padding: 3rem 0;
+    border-top: var(--line);
+    border-bottom: var(--line);
+
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+        flex: 0 0 50%;  // each one occupies 50%
+        margin-bottom: .7rem;
+    }
+}
+```
+
+# 2020-04-23
+## video No.1
+build the user review section by flexbox
+
+z-index has no effect for position:static (the default).
 
 
 

@@ -871,4 +871,162 @@ display a box with search suggestions as soon as the user starts typing in the s
 
 create a caption for the .gallery__item with a nice hover effect
 
+# 2020-04-24
+## video No.1
+CSS Grid!
 
+1. CSS Grid Lyout is a brand new module that brings a 2D grid system to CSS for the first time.
+
+2. CSS Grid replaces float layouts, using less and more readable and logical CSS and HTML.
+
+3. CSS Grid works perfectly together with Flexbox, which is best to handle 1D components and layouts.(Grid + Flexbox)
+
+no need to use bootstrap to layout.
+
+cheatsheet about properties in grid
+
+## video No.2
+setup
+
+## video No.3
+first practice of grid
+
+```scss
+.container {
+  background-color: #eee;
+  width: 1000px;
+  margin: 0 auto;
+  
+  display: grid;
+  grid-template-rows: 150px 150px;  // height of row
+  grid-template-columns: 150px 150px 150px;
+  
+  // grid-row-gap: 30px;
+  // grid-column-gap: 50px;
+  
+  grid-gap: 30px;
+}
+```
+
+## video No.4
+
+1. repeat function: 
+
+`grid-template-rows: repeat(2, 150px);`
+
+2. `fr` unit
+
+`grid-template-columns: repeat(3, 1fr);`
+
+`fr` means proportional relations of space to occupy between each item
+
+`grid-template-columns: 1fr 2fr 1fr;` so the middle one is as twice large as the others.
+
+`fr` can also be used with other units:
+
+`grid-template-columns: 50% 1fr 1fr;` 
+
+## video No.5
+Position grid item
+
+```scss
+&--1 {
+    background-color: orangered;
+    // grid-row-start: 2;
+    // grid-row-end: 3;
+    // grid-column-start: 2;
+    // grid-column-end: 3;
+    // the above equals to the shorthands:
+    grid-row: 2 / 3;
+    grid-column: 2 / 3; 
+    // further shorthands:
+    // grid-area 2 / 2 3 / 3  // row-start / column-start row-end / column-end 
+  }
+```
+
+## video No.6
+Spanning grid items
+
+`grid-column: 2 / 4;` it will occupy 2 cells in this row.
+
+## video No.7
+solve the challenge
+
+# 2020-04-26
+## video No.1
+A basic solution to this challenge
+
+## video No.2
+Naming grid line. It is a different sollution to the challenge.
+
+use a name to replace each line number
+
+```scss
+.container {
+    grid-template-rows: [header-start] 100px [header-end box-start] 200px [box-end main-start] 400px //... and so on 
+}
+
+.sidebar {
+    grid-row: header-end / footer-start;
+}
+```
+
+## video No.3
+Naming grid area. This is the third solution.
+
+```scss
+.container {
+    grid-template-areas: "head head head head"
+                        "box box box side"
+                        "main main main side"
+                        "footer footer footer footer"
+}
+
+.header {
+    grid-area: head;
+}
+```
+
+can use `.` to set as default value for empty grid cell
+
+```scss
+.container {
+    grid-template-areas: "head head head ."
+                        "box box box side"
+                        "main main main side"
+                        "footer footer footer footer"
+}
+```
+
+for small and simple layout, grid-area is easy to use.
+
+## video No.4
+Implicit VS Explicit grid
+
+when you define 4 cells in a grid template, but you have 8 items.
+
+The first 4 are explicit grid and the left is implicit grid.
+
+You can also define the size of implicit grid cells: `grid-auto-rows: 80px`
+
+Implicit grid grows as rows, because for the explicit grid, `grid-auto-flow: row` is the default value. But you can also change it to `column`.
+
+When you do not know how many items in returned data from Ajax call, implicit grid is very useful here.
+
+## video No.5
+Align grid items
+
+`align-items: stretch;` is the default value
+
+we also have new property: `justify-items`.
+
+very similar to flexbox, also has `align-self` and `justify-self`
+
+## video No.6
+Align tracks 
+
+`justify-content: space-between | start | end ...` like flexbox
+
+`align-content `
+
+if you do not want holes: `grid-auto-flow: row dense`

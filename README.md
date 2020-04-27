@@ -1030,3 +1030,38 @@ Align tracks
 `align-content `
 
 if you do not want holes: `grid-auto-flow: row dense`
+
+## video No.7
+min-content, max-content and minmax() function
+
+`max-content` makes items as wide as possible by avoiding line breaks in content
+
+`grid-template-rows: repeat(2, minmax(150px, min-content));`
+
+`minmax` function define a upper bound and lower bound for grid items.
+
+## video No.8
+`auto-fit` and `auto-fill` and responsive layout
+
+`grid-template-column: repeat(auto-fill, 100px)` will calculate number of columns based on container's width.
+
+But `auto-fit` will still the same number of tracks, but auto collapse empty cells. For examle, you have 8 items but 10 tracks, the left will have 0 width.
+
+these properties can make webpage more responsive.
+
+## video No.9 
+setup new project
+
+# 2020-04-27
+## video No.1
+build the overall layout
+
+1. how to build a complex and modern layout using advanced CSS Grid techniques.
+
+2. how to choose different row and column track sizes for different types of content.
+
+## video No.2
+continue the layout, column tracks now
+
+## video No.3
+build the feature section

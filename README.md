@@ -1065,3 +1065,22 @@ continue the layout, column tracks now
 
 ## video No.3
 build the feature section
+
+1. how and why to create grids inside of grids;
+
+2. how to create a respinsive component without media queries
+
+3. how to build a small component using CSS Grid
+
+## video No.4
+continue the feature section
+
+-1 means the last **explicit** grit!
+
+NOTE: why set `align-item` on features grid level, not single feature level???
+because the children element of feature is the content of feature.
+
+`grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));` to control the row numbers based on window width.
+
+## video No.5
+

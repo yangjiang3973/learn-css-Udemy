@@ -1096,3 +1096,10 @@ continew the story section
 
 ## video No.7
 build the homes section
+
+build a complex component using a mix of Grid properties, overlapping and flexbox
+
+## video No.8
+contine the homes section
+
+usually just define the columns, and let the browser to decide rows implicitly.

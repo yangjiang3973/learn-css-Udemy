@@ -1083,4 +1083,16 @@ because the children element of feature is the content of feature.
 `grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));` to control the row numbers based on window width.
 
 ## video No.5
+build the story section
 
+1. how to deal with overlapping grid items
+
+2. why images are special and behave differently than other grid items
+
+3. how to decide flexbox is a better tool in certain situations
+
+## video No.6
+continew the story section
+
+## video No.7
+build the homes section

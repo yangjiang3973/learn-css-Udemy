@@ -1130,7 +1130,7 @@ practice what I already learnt
 ## video No.4
 build the header
 
-1. how to manage vertical spacing in a responsive layout using CSS Grid techniques
+1. how to manage vertical spacing in a responsive layout using CSS Grid techniques(set height by `vh` and use `fr`)
 
 2. how to use `::before` `::after` as grid items
 
@@ -1138,3 +1138,14 @@ build the header
 continue the header
 
 `filter: brightness(70%);`
+
+## video No.6
+build the realtor part to practice. nothing new.
+
+
+difference between `align-content, justify-content, justify-items` in grid
+
+why use `em` not `rem` in media query??
+
+it is better to use line name in grid for large grid layout. because line number will change after you move a row or col in template, then everything will change if you use line number to positon item.
+

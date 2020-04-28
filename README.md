@@ -1122,4 +1122,19 @@ nothing new, just practice
 
 `grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));`
 
+## video No.3
+sidebar
 
+practice what I already learnt
+
+## video No.4
+build the header
+
+1. how to manage vertical spacing in a responsive layout using CSS Grid techniques
+
+2. how to use `::before` `::after` as grid items
+
+## video No.5
+continue the header
+
+`filter: brightness(70%);`

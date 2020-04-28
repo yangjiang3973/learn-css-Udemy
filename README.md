@@ -1103,3 +1103,23 @@ build a complex component using a mix of Grid properties, overlapping and flexbo
 contine the homes section
 
 usually just define the columns, and let the browser to decide rows implicitly.
+
+## video No.9
+1. how to create complex grid-looking gallery
+
+2. using `object-fit` together with images for grid items
+
+add a wrapper for img and use `object-fit`
+
+# 2020-04-27
+## video No.1
+position each img in grid areas
+
+emmit syntax: [] for attribute, () to structure it better
+
+## video No.2
+nothing new, just practice
+
+`grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));`
+
+

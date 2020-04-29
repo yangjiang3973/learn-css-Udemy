@@ -1145,7 +1145,18 @@ build the realtor part to practice. nothing new.
 
 difference between `align-content, justify-content, justify-items` in grid
 
+## video No.7
+
 why use `em` not `rem` in media query??
 
 it is better to use line name in grid for large grid layout. because line number will change after you move a row or col in template, then everything will change if you use line number to positon item.
 
+## video No.8
+continue media query
+
+## video No.9
+Browser support
+
+## video No.10
+
+wrapup
